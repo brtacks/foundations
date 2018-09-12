@@ -21,7 +21,12 @@ Why should we pay attention to what morals liberals or conservatives care more a
 
 # Data
 
+## Sermons
+
+Unitarian Universalist: *I Pledge Allegiance* ([text](http://uuabq.com/wp-content/uploads/2018/07/20180715_Pledge_Allegiance.pdf), [video](https://www.youtube.com/watch?v=Ly2ic09yAlo))
+
 ## Moral Foundations Dictionary
+
 - [Moral Foundations LIWC Dictionary](http://www.moralfoundations.org/sites/default/files/files/downloads/moral%20foundations%20dictionary.dic): a list of 324 of base foundation words
 
 The header section of the file is contained within two percent signs, each on their own line. The lines in between them each contain the hash index of the foundation followed by a tab and the foundation name.
