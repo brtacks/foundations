@@ -40,26 +40,28 @@ I'm deeply concerned that **judges are making those decisions and not the citize
 
 ### John Kerry, October 13, 2004
 
-**We're all God's children**, Bob, and I think if you were to talk to Dick Cheney's daughter, who is a lesbian, she would tell you that shee's being who she was. **She's being who she was born as.** I think if you talk to anybody, **it's not choice**. I've met **people who've struggled with this for years**, people who were in a marriage because they were **living a sort of convention**, and **they struggled** with it. And I've met **wives who are supportive** of their husbands, or vice versa, when **they finally sort of broke out** and **allowed themselves** to live who they were, who they felt **God had made them**. I think we have to **respect** that.
+**We're all God's children**, Bob, and I think if you were to talk to Dick Cheney's daughter, who is a lesbian, she would tell you that **she's being who she was**. **She's being who she was born as.** I think if you talk to anybody, **it's not choice**. I've met **people who've struggled with this for years**, people who were in a marriage because they were **living a sort of convention**, and **they struggled** with it. And I've met **wives who are supportive** of their husbands, or vice versa, when **they finally sort of broke out** and **allowed themselves** to live who they were, who they felt **God had made them**. I think we have to **respect** that.
 
-**The President and I share** the belief that marriage is between a man and a woman. I believe that. I believe marriage is between a man and a woman. But I also believe that because **we are the United States of America**, we're a country with a great, unbelievable Constitution, with **rights that we afford people**, that **you can't discriminate** in the workplace. **You can't discriminate** in the rights that you afford people. **You can't disallow someone the right to visit their partner in a hospital**. You have to **allow people** to transfer property, which is why I'm for partnership rights and so forth.
+The President and I share the belief that marriage is between a man and a woman. I believe that. I believe marriage is between a man and a woman. But I also believe that because **we are the United States of America**, we're a country with a great, unbelievable Constitution, with **rights that we afford people**, that **you can't discriminate** in the workplace. **You can't discriminate** in the rights that you afford people. **You can't disallow someone the right to visit their partner in a hospital**. You have to **allow people** to transfer property, which is why I'm for partnership rights and so forth.
 
 | Trigger Phrase                                   | Foundation | Explanation                                 |
 |--------------------------------------------------|------------|---------------------------------------------|
 | We're all God's Children                         | ingroup    | standing with your group                    |
-| [Daughter's] being who she was born as           | care       | nurturance                                  |
+| Dick Cheney's daughter                           | care       | nurturance                                  |
+| She's being who she was                          | liberty    | desire to be free from oppression           |
+| SHe's being who she was born as                  | liberty    | desire to be free from oppression           |
 | it's not choice                                  | liberty    | desire to be free from oppression           |
 | people who've struggled with this for years      | care       | feel and dislike the pain of others         |
 | living a sort of convention                      | liberty    | desire to be free from oppression           |
 | they struggled                                   | care       | feel and dislike the pain of others         |
-| wives who are supportive...broke out             | ingroup    | one for all, all for one                    |
-| allowed themselves to live who they were         | liberty    | desire to be free from oppression           |
+| wives who are supportive                         | ingroup    | one for all, all for one                    |
+| broke out...allowed themselves to live           | liberty    | desire to be free from oppression           |
 | God had made them                                | ingroup    | standing with your group                    |
 | we have to respect that                          | authority  | respect for traditions                      |
-| The President and I share                        | authority  | deference to legitimate authority           |
 | we are the United States of America              | ingroup    | standing with your nation                   |
 | rights that we afford people                     | fairness   | rendering justice according to shared rules |
-| you can't discriminate (x2)                      | fairness   | rendering justice according to shared rules |
+| you can't discriminate                           | fairness   | rendering justice according to shared rules |
+| you can't discriminate                           | fairness   | rendering justice according to shared rules |
 | You can't disallow the right to visit...hospital | fairness   | rendering justice according to shared rules |
 | allow people                                     | fairness   | rendering justice according to shared rules |
 | partnership rights                               | fairness   | rendering justice according to shared rules |
