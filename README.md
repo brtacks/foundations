@@ -7,7 +7,9 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 - [ ] *Data Visualization:* use D3 to create awesome data visualizations
 - [ ] *Website:* make the website
 
-# Transcript Planning
+# Transcript: "Do you believe homosexuality is a choice?"
+
+[Video](https://youtu.be/esJ91WNJD1U?t=25m14s)
 
 ### George W. Bush, October 13, 2004
 
