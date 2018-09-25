@@ -64,7 +64,7 @@ But as we **respect someone's rights** and as we **profess tolerance**, **we sho
 [source](https://www.dropbox.com/s/us7jlqdpse0ek1e/Moral%20Foundations%20Theory%20The%20Pragmatic%20Validity%20of%20Moral%20Pluralism.pdf?dl=0) (Section 3.2, page 15)
 
 ### The Moral Foundations of Politics
-[source](https://www.righteousmind.com/wp-content/uploads/2013/08/ch07.RighteousMind.final_.pdf)
+[source](https://www.righteousmind.com/wp-content/uploads/2013/08/ch07.RighteousMind.final_.pdf) (Chapter 7)
 
 ### Liberals and Conservatives Rely on Different Sets of Moral Foundations
 [source](http://www-bcf.usc.edu/~jessegra/papers/GrahamHaidtNosek.2009.Moral%20foundations%20of%20liberals%20and%20conservatives.JPSP.pdf) (Study 4, page 1038-1040)
