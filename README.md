@@ -33,7 +33,25 @@ But as we **respect someone's rights** and as we **profess tolerance**, **we sho
 
 **The President and I share** the belief that marriage is between a man and a woman. I believe that. I believe marriage is between a man and a woman. But I also believe that because **we are the United States of America**, we're a country with a great, unbelievable Constitution, with **rights that we afford people**, that **you can't discriminate** in the workplace. **You can't discriminate** in the rights that you afford people. **You can't disallow someone the right to visit their partner in a hospital**. You have to **allow people** to transfer property, which is why I'm for partnership rights and so forth.
 
-
+| Trigger Phrase                                   | Foundation | Explanation                                 |
+|--------------------------------------------------|------------|---------------------------------------------|
+| We're all God's Children                         | ingroup    | standing with your group                    |
+| [Daughter's] being who she was born as           | care       | nurturance                                  |
+| it's not choice                                  | liberty    | desire to be free from oppression           |
+| people who've struggled with this for years      | care       | feel and dislike the pain of others         |
+| living a sort of convention                      | liberty    | desire to be free from oppression           |
+| they struggled                                   | care       | feel and dislike the pain of others         |
+| wives who are supportive...broke out             | ingroup    | one for all, all for one                    |
+| allowed themselves to live who they were         | liberty    | desire to be free from oppression           |
+| God had made them                                | ingroup    | standing with your group                    |
+| we have to respect that                          | authority  | respect for traditions                      |
+| The President and I share                        | authority  | deference to legitimate authority           |
+| we are the United States of America              | ingroup    | standing with your nation                   |
+| rights that we afford people                     | fairness   | rendering justice according to shared rules |
+| you can't discriminate (x2)                      | fairness   | rendering justice according to shared rules |
+| You can't disallow the right to visit...hospital | fairness   | rendering justice according to shared rules |
+| allow people                                     | fairness   | rendering justice according to shared rules |
+| partnership rights                               | fairness   | rendering justice according to shared rules |
 
 # Literature
 
