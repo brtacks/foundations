@@ -5,7 +5,6 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 - [ ] *Planning:* High-level outlining and graphics brainstorm for the article
 - [ ] *Scraping:* cleaning and storing sermons from the web
 - [ ] *Aggregator:* engine to measure and aggregate moral foundations levels of all texts
-- [ ] *
 - [ ] *Writing:* outline and write the article
 - [ ] *Website:* make the website
 - [ ] *Data Visualization:* use D3 to create awesome data visualizations
