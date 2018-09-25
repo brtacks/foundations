@@ -9,7 +9,7 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 
 # Transcript: "Do you believe homosexuality is a choice?"
 
-[Video](https://youtu.be/esJ91WNJD1U?t=25m14s)
+[Video](https://youtu.be/esJ91WNJD1U?t=25m4s)
 
 ### George W. Bush, October 13, 2004
 
