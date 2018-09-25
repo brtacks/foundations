@@ -11,15 +11,20 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 
 ### George W. Bush, October 13, 2004
 
+You know, Bob, **I don't know. I just don't know.** I do know that we have a choice to make in America, and that is to **treat people with tolerance and respect and dignity**. It's important that we do that. I also know, **in a free society, people, consenting adults, can live the way they want to live**. And that's to be honored.
+
 But as we **respect someone's rights** and as we **profess tolerance**, **we shouldn't change—or have to change** our basic views on the **sanctity of marriage**. I believe in the **sanctity of marriage**. I think it's very important that we **protect marriage as an institution** between a man and a woman.
 
 **I proposed a constitutional amendment**. The reason I did so was because I was worried that **activist judges are actually defining** the definition of marriage. And the surest way to **protect marriage** between a man and woman is to amend the Constitution. It has also the benefit of allowing citizens to **participate in the process**. After all, when you amend the Constitution, **State legislatures must participate** in the ratification of the Constitution.
 
 | Trigger Phrase                        | Foundation | Explanation                                                       |
 |---------------------------------------|------------|-------------------------------------------------------------------|
+| I don't know. I just don't know       | loyalty    | honesty                                                           |
+| treat people with...dignity           | fairness   | reciprocal altruism                                               |
+| in a free society...the way they want | liberty    | desire to be free from opression                                  |
 | respect somenone's rights             | fairness   | rendering justice according to shared rules                       |
 | profess tolerance                     | fairness   | reciprocal altruism                                               |
-| we shouldn't...have to change         | fairness   | rendering justice according to shared rules                       |
+| we shouldn't...have to change         | liberty    | resentment toward the dominators                                  |
 | sanctity of marriage (x2)             | sanctity   | the body is a temple that can be desecrated by immoral activities |
 | protect marriage (x2)                 | authority  | submitting to tradition                                           |
 | I proposed a Constitutional amendment | authority  | underlies virtues of leadership and followership                  |
