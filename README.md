@@ -7,6 +7,10 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 - [ ] *Data Visualization:* use D3 to create awesome data visualizations
 - [ ] *Website:* make the website
 
+Immediate TODO's:
+
+- clean Bush captions with respect to highlighting
+
 # Transcript: "Do you believe homosexuality is a choice?"
 
 [[Full Video]](https://youtu.be/esJ91WNJD1U?t=25m4s)
