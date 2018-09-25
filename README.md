@@ -7,6 +7,24 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 - [ ] *Data Visualization:* use D3 to create awesome data visualizations
 - [ ] *Website:* make the website
 
+# Transcript Planning
+
+### George W. Bush, October 13, 2004
+
+But as we **respect** someone's rights and as we profess **tolerance**, we shouldn't change—or have to change our basic views on the **sanctity** of marriage. I believe in the **sanctity** of marriage. I think it's very important that we **protect** marriage as an institution between a man and a woman.
+
+I proposed a constitutional amendment. The reason I did so was because I was worried that activist judges are actually defining the definition of marriage. And the surest way to **protect** marriage between a man and woman is to amend the Constitution. It has also the benefit of allowing citizens to **participate** in the process. After all, when you amend the Constitution, **State** legislatures must participate in the ratification of the Constitution.
+
+> respect rights, sanctity of marriage, protect marriage, participatory state
+
+### John Kerry, October 13, 2004
+
+We're all God's children, Bob, and I think if you were to talk to Dick Cheney's daughter, who is a lesbian, she would tell you that she's being who she was. She's being who she was born as. I think if you talk to anybody, it's not choice. I've met people who've **struggled** with this for years, people who were in a marriage because they were living a sort of **convention**, and they **struggled** with it. And I've met wives who are supportive of their husbands, or vice versa, when they finally sort of broke out and **allowed** themselves to live who they were, who they felt God had made them. I think we have to **respect** that.
+
+The President and I share the belief that marriage is between a man and a woman. I believe that. I believe marriage is between a man and a woman. But I also believe that because we are the United States of America, we're a country with a great, unbelievable Constitution, with **rights** that we afford people, that you can't **discriminate** in the workplace. You can't **discriminate** in the rights that you afford people. You can't disallow someone the right to visit their partner in a **hospital**. You have to **allow** people to transfer property, which is why I'm for partnership rights and so forth.
+
+> people who've struggled, forced into convention and struggled, allowed (freed) themselves to live who they were,
+
 # Literature
 
 ### Moral Foundations Theory: The Pragmatic Validity of Moral Pluralism
