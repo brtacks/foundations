@@ -35,7 +35,7 @@ I'm deeply concerned that **judges are making those decisions and not the citize
 | we have a choice ot make in America   | ingroup    | standing with your group                                          |
 | treat people with...dignity           | fairness   | reciprocal altruism                                               |
 | in a free society...the way they want | liberty    | desire to be free from opression                                  |
-| respect somenone's rights             | fairness   | rendering justice according to shared rules                       |
+| respect someone's rights             | fairness   | rendering justice according to shared rules                       |
 | profess tolerance                     | fairness   | reciprocal altruism                                               |
 | we shouldn't...have to change         | liberty    | resentment toward the dominators                                  |
 | sanctity of marriage                  | sanctity   | the body is a temple that can be desecrated by immoral activities |
@@ -59,14 +59,14 @@ The President and I share the belief that marriage is between a man and a woman.
 | We're all God's Children                         | ingroup    | standing with your group                    |
 | Dick Cheney's daughter                           | care       | nurturance                                  |
 | She's being who she was                          | liberty    | desire to be free from oppression           |
-| SHe's being who she was born as                  | liberty    | desire to be free from oppression           |
+| She's being who she was born as                  | liberty    | desire to be free from oppression           |
 | it's not choice                                  | liberty    | desire to be free from oppression           |
 | people who've struggled with this for years      | care       | feel and dislike the pain of others         |
 | living a sort of convention                      | liberty    | desire to be free from oppression           |
 | they struggled                                   | care       | feel and dislike the pain of others         |
 | wives who are supportive                         | ingroup    | one for all, all for one                    |
 | broke out...allowed themselves to live           | liberty    | desire to be free from oppression           |
-| God had made them                                | ingroup    | standing with your group                    |
+| who they felt God had made them                  | liberty    | desire to be free from oppression           |
 | we have to respect that                          | authority  | respect for traditions                      |
 | we are the United States of America              | ingroup    | standing with your nation                   |
 | rights that we afford people                     | fairness   | rendering justice according to shared rules |
