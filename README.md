@@ -32,10 +32,10 @@ I'm deeply concerned that **judges are making those decisions and not the citize
 | Trigger Phrase                        | Foundation | Explanation                                                       |
 |---------------------------------------|------------|-------------------------------------------------------------------|
 | I don't know. I just don't know       | loyalty    | honesty                                                           |
-| we have a choice ot make in America   | ingroup    | standing with your group                                          |
+| we have a choice to make in America   | ingroup    | standing with your group                                          |
 | treat people with...dignity           | fairness   | reciprocal altruism                                               |
 | in a free society...the way they want | liberty    | desire to be free from opression                                  |
-| respect someone's rights             | fairness   | rendering justice according to shared rules                       |
+| respect someone's rights              | fairness   | rendering justice according to shared rules                       |
 | profess tolerance                     | fairness   | reciprocal altruism                                               |
 | we shouldn't...have to change         | liberty    | resentment toward the dominators                                  |
 | sanctity of marriage                  | sanctity   | the body is a temple that can be desecrated by immoral activities |
