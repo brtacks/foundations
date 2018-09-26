@@ -1,7 +1,7 @@
 ﻿start (inc),stop (exc),trigger,caption
 0,1,0,
-1,3,1,We're all God's children
-3,4,0,and
+1,3,1,"We're all God's children,"
+3,4,0,"Bob, and"
 4,6,0,
 6,7,0,I think if you
 7,8,0,were to talk
@@ -33,14 +33,13 @@
 44,45,1,broke out
 45,46,0,and
 46,48,1,allowed themselves to live who they were
-48,49,0,who they felt
-49,50,1,God had made them.
+48,50,1,who they felt God had made them.
 50,51,0,I think we have to
 51,52,1,respect that.
 52,54,0,The President and I share the
 54,55,0,belief
-55,56,0,that
-56,57,0,marriage is between a man and a
+55,56,0,that marriage
+56,57,0,is between a man and a
 57,59,0,woman. I believe that.
 59,61,0,I believe marriage is between a man and a woman.
 61,62,0,
@@ -50,8 +49,8 @@
 69,71,1,"rights that we afford people, that"
 71,72,1,you can't discriminate 
 72,73,0,in the workplace
-73,74,1,you can't discriminate  in the rights
-74,75,1,that you afford people.
+73,74,1,you can't discriminate in the rights
+74,75,0,that you afford people.
 75,80,1,You can't disallow someone the right to visit their parner in a hospital.
 80,81,0,You have to
 81,82,1,allow people to transfer
