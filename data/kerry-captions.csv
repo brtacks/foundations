@@ -1,4 +1,4 @@
-﻿start (inc),stop (exc),trigger,caption
+﻿start,stop,trigger,caption
 0,1,0,
 1,3,1,"We're all God's children,"
 3,4,0,"Bob, and"
@@ -47,9 +47,9 @@
 63,65,1,"we are the United States of America,"
 65,69,0,"we're a county with a great, unbelievable Constitution, with"
 69,71,1,"rights that we afford people, that"
-71,72,1,you can't discriminate 
-72,73,0,in the workplace
-73,74,1,you can't discriminate in the rights
+71,72,1,you can't discriminate
+72,73,0,in the workplace.
+73,74,1,You can't discriminate in the rights
 74,75,0,that you afford people.
 75,80,1,You can't disallow someone the right to visit their parner in a hospital.
 80,81,0,You have to
