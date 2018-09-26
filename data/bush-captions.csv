@@ -1,32 +1,39 @@
-,start (inc),stop (exc),trigger,caption
-0,0,4,1,"You know, Bob, I don't know. I just don't know."
-1,4,7,1,"I do know that we have a choice to make in America,"
-2,7,11,1,and that is to treat people with tolerance and respect and dignity.
-3,11,13,0,It's important that we do that.
-4,13,18,1,"I also know, in a free society, people, consenting adults, can live the way they want to live."
-5,18,20,0,And that's to be honored. 
-6,20,22,1,But as we respect someone's rights
-7,22,23,0,
-8,23,24,0,and as we
-9,24,26,1,"profess tolerance,"
-10,26,28,1,we shouldn't change—or have to change our
-11,28,29,0,basic views on the
-12,29,31,1,sanctity of marriage.
-13,31,33,1,I believe in the sanctity of marriage
-14,33,34,0,
-15,34,35,0,I think it's very important that we
-16,35,37,1,protect marriage as an institution
-17,37,39,0,between a mman and a woman.
-18,39,42,1,I proposed a constitutional amendment.
-19,42,45,0,The reason I did so was because I was worred that activist
-20,45,49,1,judges are actually defining the definition of marriage.
-21,49,51,1,And the surest way to protect marriage
-22,51,54,0,between a man and woman is to amend the Constitution.
-23,54,57,0,It has also the beneit of allowing citizens
-24,57,59,1,"to participate in the process. After all, when you"
-25,59,60,0,amend the Constitution
-26,60,62,1,State legislatures must participate
-27,62,64,0,in the ratification of the Constitution.
-28,64,66,0,I'm deeply concerned that
-29,66,68,0,judges are making those decisions
-30,68,71,1,and not the citizenry of the United States.
+start (inc),stop (exc),trigger,caption
+0,1,1,"You know, Bob, I don't know."
+1,3,0,
+3,4,1,I just don't know.
+4,5,1,I do know that
+5,7,1,"we have a choice to make in America,"
+7,8,1,and that is to
+8,11,1,treat people with tolerance and respect and dignity.
+11,13,0,It's important that we do that.
+13,16,0,"I also know, in a free society, people, "
+16,18,1,"consenting adults, can live the way they want to live."
+18,20,0,And that's to be honored. 
+20,22,1,But as we respect someone's rights
+22,23,0,
+23,24,0,and as we
+24,26,1,"profess tolerance,"
+26,28,1,we shouldn't change—or have to change our
+28,29,0,basic views on the
+29,31,1,sanctity of marriage.
+31,33,1,I believe in the sanctity of marriage
+33,34,0,
+34,35,0,I think it's very important that we
+35,37,1,protect marriage as an institution
+37,39,0,between a man and a woman.
+39,42,1,I proposed a constitutional amendment.
+42,45,0,The reason I did so was because I was worred that activist
+45,49,1,judges are actually defining the definition of marriage.
+49,50,0,And the surest way to
+50,51,1,protect marriage
+51,54,0,between a man and woman is to amend the Constitution.
+54,57,0,It has also the benefit of allowing citizens
+57,58,1,to participate in the process.
+58,59,0,"After all, when you"
+59,60,0,amend the Constitution
+60,62,1,State legislatures must participate
+62,64,0,in the ratification of the Constitution.
+64,66,0,I'm deeply concerned that
+66,68,0,judges are making those decisions
+68,71,1,and not the citizenry of the United States.
