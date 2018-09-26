@@ -10,6 +10,7 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 Immediate TODO's:
 
 - clean Bush captions with respect to highlighting
+- `trigger` -> `foundation` ([-1, 6])
 
 # Transcript: "Do you believe homosexuality is a choice?"
 
