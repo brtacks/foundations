@@ -21,18 +21,17 @@ const timedWords = ({ start, stop, words }) => {
 };
 
 function updateWord(captionData, i) {
-  console.log(timedWords(captionData))
   const u = d3.select(this)
     .selectAll('span')
     .data(timedWords(captionData));
 
   u.enter()
     .append('span')
-    .style('color', 'hsla(0, 0%, 100%, .86)')
+    .style('color', 'hsla(0, 0%, 100%, .4)')
     .html(timedWord => timedWord.text + ' ')
     .transition()
     .delay(timedWord => timedWord.delay)
-    .style('color', '#000');
+    .style('color', '#fff');
 
   u.exit().remove();
 };
@@ -52,6 +51,11 @@ const update = () => {
 d3.csv('./data/kerry-captions.csv').then(csv => {
   data = csv;
   initialize();
-
-  update();
 });
+
+const begin = () => {
+  d3.select('button#begin-graphic').remove();
+  const vid = document.getElementById('video')
+  vid.play();
+  update();
+};
