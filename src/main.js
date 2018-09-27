@@ -36,16 +36,29 @@ function updateWord(captionData, i) {
     .delay(word => word.offset)
     .style('color', '#fff');
 
+  setTimeout(
+    () =>
+      d3.select(this)
+        .selectAll('span')
+        .style('color', '#')
+    )
+
   if (captionData.foundation > -1 && script.length > 0) {
     setTimeout(
-      () =>
+      () => {
+        const caption = d3.select(this) // TODO: LIGHTBLUE HIGHLILGHTING
         d3
           .select(this)
           .append('div')
           .classed('baby-tile', true)
           .transition()
           .duration(350)
-          .style('background-color', 'red'),
+          .style('background-color', 'red')
+          .style('tranform', 'translate(2px, -4x)')
+          .merge(u)
+          .transition()
+          .style('color', 'lightblue');
+      },
       script[script.length - 1].offset,
     );
   }
