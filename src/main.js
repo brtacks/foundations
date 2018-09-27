@@ -4,9 +4,9 @@ const initialize = () =>
   data = data
     .filter(d => d.caption.length > 0)
     .map(({ start, stop, foundation, caption }) => ({
-      start,
-      stop,
-      foundation,
+      start: +start * 1000,
+      stop: +stop * 1000,
+      foundation: +foundation,
       caption,
       words: caption.split(' '),
     }));
@@ -15,11 +15,17 @@ const timedWords = ({ start, stop, words }) => {
   // {start, stop, words}
   const numWords = words.length;
 
-  const inc = (start - stop) / (numWords + 1);
+  const inc = (stop - start) / numWords;
+
+  return words.map((w, i) => ({
+    text: w,
+    delay: start + i * inc,
+  }))
 
 };
 
 function updateWord(captionData, i) {
+  console.log(timedWords(captionData))
   const u = d3.select(this)
     .selectAll('span')
     .data(timedWords(captionData));
@@ -29,7 +35,7 @@ function updateWord(captionData, i) {
     .style('color', 'hsla(0, 0%, 100%, .86)')
     .html(timedWord => timedWord.text + ' ')
     .transition()
-    .delay(timedWord => captionData.start + timedWord.delay)
+    .delay(timedWord => timedWord.delay)
     .style('color', '#000');
 
   u.exit().remove();
