@@ -36,15 +36,18 @@ function updateWord(captionData, i) {
     .delay(word => word.offset)
     .style('color', '#fff');
 
-  if (captionData.foundation > -1) {
-    d3.select(this)
-      .append('div')
-      .style('display', 'inline')
-      .style('background-color', 'red')
-      .style('width', 20)
-      .style('height', 20)
-      .attr('width', 20)
-      .attr('height', 20);    
+  if (captionData.foundation > -1 && script.length > 0) {
+    setTimeout(
+      () =>
+        d3
+          .select(this)
+          .append('div')
+          .classed('baby-tile', true)
+          .transition()
+          .duration(350)
+          .style('background-color', 'red'),
+      script[script.length - 1].offset,
+    );
   }
 
   u.exit().remove();
