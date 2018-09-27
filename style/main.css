@@ -25,6 +25,7 @@ body {
 }
 
 #video-container {
+  flex-basis: 50%;
   position: relative;
 }
 
@@ -41,4 +42,3 @@ body {
   left: 0;
   z-index: 1;
 }
-

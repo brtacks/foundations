@@ -16,22 +16,36 @@ const timedWords = ({ start, stop, words }) => {
 
   return words.map((w, i) => ({
     text: w,
-    delay: start + i * inc,
+    offset: start + i * inc,
   }));
 };
 
 function updateWord(captionData, i) {
+  const script = timedWords(captionData);
+  // a script contains an offset (in seconds) to indicate when a word is spoken
+
   const u = d3.select(this)
     .selectAll('span')
-    .data(timedWords(captionData));
+    .data(script);
 
   u.enter()
     .append('span')
     .style('color', 'hsla(0, 0%, 100%, .4)')
-    .html(timedWord => timedWord.text + ' ')
+    .html(word => word.text + ' ')
     .transition()
-    .delay(timedWord => timedWord.delay)
+    .delay(word => word.offset)
     .style('color', '#fff');
+
+  if (captionData.foundation > -1) {
+    d3.select(this)
+      .append('div')
+      .style('display', 'inline')
+      .style('background-color', 'red')
+      .style('width', 20)
+      .style('height', 20)
+      .attr('width', 20)
+      .attr('height', 20);    
+  }
 
   u.exit().remove();
 };
