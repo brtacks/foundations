@@ -12,16 +12,12 @@ const initialize = () =>
     }));
 
 const timedWords = ({ start, stop, words }) => {
-  // {start, stop, words}
-  const numWords = words.length;
-
-  const inc = (stop - start) / numWords;
+  const inc = (stop - start) / words.length;
 
   return words.map((w, i) => ({
     text: w,
     delay: start + i * inc,
-  }))
-
+  }));
 };
 
 function updateWord(captionData, i) {
