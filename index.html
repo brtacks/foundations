@@ -6,35 +6,25 @@
     <title>Foundations</title>
   </head>
   <body>
-    <button id="begin-graphic" onclick="begin()">Begin Graphic</button>
-    <div id="graphic">
-      <div id="video-container">
-        <video id="video" src="./data/video/kerry.mp4">
-          Sorry, your browser doesn't support embedded videos
-        </video>
-        <div id="text">
-            <!-- <span.caption> -->
-            <!--     <span.word> -->
-            <!--     ... -->
+    <div id="content">
+      <div id="graphic">
+        <div id="video-container">
+          <video id="video" src="./data/video/bush.mp4">
+            Sorry, your browser doesn't support embedded videos
+          </video>
+          <div id="text">
+              <!-- <span.caption> -->
+              <!--     <span.word> -->
+              <!--     ... -->
+          </div>
+        </div>
+        <div id="graph">
         </div>
       </div>
-      <div id="graph">
-      </div>
+    <button id="begin-graphic" onclick="begin()">Begin Graphic</button>
     </div>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="./src/main.js"></script>
-    <script>
-      let focused = true;
-      const vid = document.getElementById('video');
-      document.addEventListener('visibilitychange', () => {
-        focused = !focused;
-        if (!focused) {
-          vid.pause();
-        } else {
-          vid.play();
-        }
-      });
-    </script>
   </body>
 </html>

@@ -58,16 +58,21 @@ function updateWord(captionData, i) {
 
     d3.select(this)
       .selectAll('div')
-      .data([0])
+      .data([0]) // better way?
       .enter()
       .append('div')
       .style('display', 'none')
       .classed('baby-tile', true)
-      .transition()
+      .transition() // todo fix display still none
       .delay(delay)
-      .duration(350)
       .style('display', 'inline-block')
-      .style('background-color', color);
+      .style('border', `2px solid ${color}`);
+
+    d3.select(this)
+      .selectAll('div')      
+      .transition()
+      .duration(500)
+      .style('border', `6px`);
   }
 
   u.exit().remove();
@@ -85,14 +90,24 @@ const update = () => {
   u.exit().remove();
 };
 
-d3.csv('./data/kerry-captions.csv').then(csv => {
+d3.csv('./data/bush-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
 
+let focused = true;
+const vid = document.getElementById('video');
+document.addEventListener('visibilitychange', () => {
+  focused = !focused;
+  if (!focused) {
+    vid.pause();
+  } else if (!vid.ended) {
+    vid.play();
+  }
+});
+
 const begin = () => {
   d3.select('button#begin-graphic').remove();
-  const vid = document.getElementById('video')
   vid.play();
   update();
 };
