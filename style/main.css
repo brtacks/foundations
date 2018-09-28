@@ -16,10 +16,6 @@ html, body {
   background-color: #fff;
 }
 
-body {
-  background-color: lightblue;
-}
-
 #graphic {
   display: flex;
 }
@@ -44,7 +40,6 @@ body {
 }
 
 div.baby-tile {
-  display: inline-block;
   position: absolute;
   width: 12px;
   height: 12px;
