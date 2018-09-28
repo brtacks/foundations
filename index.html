@@ -24,5 +24,17 @@
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="./src/main.js"></script>
+    <script>
+      let focused = true;
+      const vid = document.getElementById('video');
+      document.addEventListener('visibilitychange', () => {
+        focused = !focused;
+        if (!focused) {
+          vid.pause();
+        } else {
+          vid.play();
+        }
+      });
+    </script>
   </body>
 </html>
