@@ -1,10 +1,10 @@
 const colors = [
-  '#fbb4ae',
-  '#b3cde3',
-  '#ccebc5',
-  '#decbe4',
-  '#fed9a6',
-  '#ffffcc',
+  '#8dd3c7',
+  '#ffffb3',
+  '#bebada',
+  '#fb8072',
+  '#80b1d3',
+  '#fdb462',
 ];
 
 const initialize = () => 
@@ -41,13 +41,17 @@ function updateWord(captionData, i) {
     .html(word => word.text + ' ')
     .transition()
     .delay(word => word.offset)
-    .style('color', '#fff');
+    .style('color', 'rgba(255, 255, 255, .92)');
 
   const { foundation } = captionData;
+
   if (foundation > -1 && script.length > 0) {
     const delay = script[script.length - 1 ].offset;
     const color = colors[foundation];
+
+
     d3.select(this)
+      .selectAll('span')
       .transition()
       .delay(delay)
       .style('color', color);
@@ -63,8 +67,7 @@ function updateWord(captionData, i) {
       .delay(delay)
       .duration(350)
       .style('display', 'inline-block')
-      .style('background-color', color)
-      .style('tranform', 'translate(2px, -4x)');
+      .style('background-color', color);
   }
 
   u.exit().remove();
