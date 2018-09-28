@@ -24,7 +24,7 @@ html, body {
 }
 
 #content {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -63,5 +63,5 @@ div.baby-tile {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  transform: translate(-12px, 3px);
+  transform: translate(-12px, 6px);
 }

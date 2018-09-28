@@ -63,16 +63,10 @@ function updateWord(captionData, i) {
       .append('div')
       .style('display', 'none')
       .classed('baby-tile', true)
-      .transition() // todo fix display still none
+      .transition()
       .delay(delay)
       .style('display', 'inline-block')
-      .style('border', `2px solid ${color}`);
-
-    d3.select(this)
-      .selectAll('div')      
-      .transition()
-      .duration(500)
-      .style('border', `6px`);
+      .style('background-color', color);
   }
 
   u.exit().remove();
