@@ -106,8 +106,18 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
+const updateVideoHeight = () => {
+  const video = document.getElementById('video');
+  const text = document.getElementById('text');
+  video.style.height = text.offsetHeight + 'px';
+}
+
+window.addEventListener('resize', updateVideoHeight);
+
 const begin = () => {
   d3.select('button#begin-graphic').remove();
   vid.play();
+
   update();
+  updateVideoHeight();
 };

@@ -35,13 +35,14 @@ html, body {
 #video-container {
   flex-basis: 57%;
   position: relative;
+  overflow-x: hidden;
 }
 
 #video-container video {
   position: relative;
   z-index: 0;
   width: 100%;
-  height: 100%;
+  object-fit: cover;
 }
 
 #text {
