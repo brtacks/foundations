@@ -103,6 +103,8 @@ document.addEventListener('visibilitychange', () => {
 const updateVideoHeight = () => {
   const video = document.getElementById('video');
   const text = document.getElementById('text');
+  console.log(text);
+  console.log(text.offsetHeight)
   video.style.height = text.offsetHeight + 'px';
 }
 

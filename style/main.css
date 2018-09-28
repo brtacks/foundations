@@ -34,6 +34,7 @@ html, body {
 
 #video-container {
   flex-basis: 57%;
+  max-width: 620px;
   position: relative;
   overflow-x: hidden;
 }
