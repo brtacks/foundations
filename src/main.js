@@ -1,3 +1,11 @@
+const NUM_FOUNDATIONS = 6;
+
+let tileSize = 15;
+let tilesPerRow = 5;
+let barPadding = 20;
+let maxValue = 100;
+let barWidth = tilesPerRow * tileSize + barPadding;
+
 const colors = [
   '#8dd3c7',
   '#ffffb3',
@@ -6,6 +14,10 @@ const colors = [
   '#80b1d3',
   '#fdb462',
 ];
+
+const tilePlacements = [];
+for (let i = 0; i < NUM_FOUNDATIONS; i++)
+  tilePlacements.push({});
 
 const initialize = () => 
   data = data
@@ -49,14 +61,15 @@ function updateWord(captionData, i) {
     const delay = script[script.length - 1 ].offset;
     const color = colors[foundation];
 
-
+    // highlight text color according to foundation
     d3.select(this)
       .selectAll('span')
       .transition()
       .delay(delay)
       .style('color', color);
 
-    d3.select(this)
+    // create baby tile
+    const babyTile = d3.select(this)
       .selectAll('div')
       .data([0]) // better way?
       .enter()
@@ -67,12 +80,22 @@ function updateWord(captionData, i) {
       .delay(delay)
       .style('display', 'inline-block')
       .style('background-color', color);
+
+    // move baby tile
+    babyTile
+      .transition()
+      .duration(500)
+      .style('transform', () => {
+        generateNextTilePosition();
+        // const { }
+        return 'translate(0,0)';
+      });
   }
 
   u.exit().remove();
 };
 
-const update = () => {
+const updateCaptions = () => {
   const u = d3.select('div#text')
     .selectAll('span')
     .data(data);
@@ -82,6 +105,28 @@ const update = () => {
     .each(updateWord);
 
   u.exit().remove();
+};
+
+const updateAxis = () => {
+  const chartWidth = NUM_FOUNDATIONS * barWidth;
+  const chartHeight = maxValue / tilesPerRow * tileSize;
+
+  const yScale = d3.scaleLinear().domain([0, maxValue]).range([chartHeight, 0]);
+  const yAxis = d3.axisRight().scale(yScale).tickSize(chartWidth);
+
+  d3.select('.y.axis').call(yAxis);
+
+  // move to a resize listener?
+  const { width, height } = document.getElementById('chart').getBoundingClientRect();
+  d3.select('#chart-container svg')
+    .style('min-width', width + 23)
+    .style('min-height', height + 33);
+}
+
+const update = () => {
+  updateCaptions();
+  updateAxis();
+  updateVideoHeight();
 };
 
 d3.csv('./data/bush-captions.csv').then(csv => {
@@ -100,13 +145,12 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
+// TODO: fix initial video height
 const updateVideoHeight = () => {
   const video = document.getElementById('video');
   const text = document.getElementById('text');
-  console.log(text);
-  console.log(text.offsetHeight)
   video.style.height = text.offsetHeight + 'px';
-}
+};
 
 window.addEventListener('resize', updateVideoHeight);
 
@@ -115,5 +159,4 @@ const begin = () => {
   vid.play();
 
   update();
-  updateVideoHeight();
 };

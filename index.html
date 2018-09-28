@@ -8,29 +8,34 @@
   <body>
     <div id="content">
       <div id="graphic">
-        <div id="video-container">
-          <video id="video" src="./data/video/bush.mp4">
-            Sorry, your browser doesn't support embedded videos
-          </video>
+        <div id="video-graphic">
+          <div id="video-container">            
+            <video id="video" src="./data/video/bush.mp4">
+              Sorry, your browser doesn't support embedded videos
+            </video>
+          </div>
           <div id="text">
-              <!-- <span.caption> -->
-              <!--     <span.word> -->
+              <!-- <span (caption)> -->
+              <!--     <span (word)> -->
               <!--     ... -->
           </div>
         </div>        
-        <div id="chart">
+        <div id="chart-container">
           <svg>
-            <g class="chart" transform="translate(20, 40)">
-              <g class="y-axis" />
-              <g class="bars" transform="translate(10, 0)"></g>
+            <g id="chart" transform="translate(20,40)">
+              <g class="y axis" />
+              <g class="bars" />
             </g>
           </svg>
         </div>
       </div>
-    <button id="begin-graphic" onclick="begin()">Begin Graphic</button>
     </div>
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <button id="begin-graphic" onclick="begin()">
+      Begin Graphic
+    </button>
+
+    <script src="./lib/d3.v5.min.js"></script>
     <script src="./src/main.js"></script>
   </body>
 </html>

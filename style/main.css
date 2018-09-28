@@ -32,10 +32,14 @@ html, body {
   display: flex;
 }
 
-#video-container {
+#video-graphic {
   flex-basis: 57%;
   max-width: 620px;
   position: relative;
+}
+
+#video-container {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -65,4 +69,18 @@ div.baby-tile {
   height: 12px;
   border-radius: 50%;
   transform: translate(-12px, 6px);
+}
+
+.axis line {
+  stroke: #eee;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis text {
+  font-size: 11px;
+  fill: #777;
+  font-family: Atlas Grotesk;
 }
