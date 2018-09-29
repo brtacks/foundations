@@ -21,11 +21,12 @@ for (let i = 0; i < NUM_FOUNDATIONS; i++)
 
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
-  const { top, left, height } = document.getElementById('svg').getBoundingClientRect();
+  const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
+  console.log(top, height)
   tilesPlaced[foundation]++;
   return {
-    x: left + (i % tilesPerRow) * tileSize,
-    y: top + height + -(Math.floor(i / tilesPerRow) + 1) * tileSize,
+    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize,
+    y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1),
   };
 };
 
@@ -90,12 +91,14 @@ function updateWord(captionData, i) {
         .style('display', 'inline-block')
         .style('background-color', color)
       .transition()
+        .duration(800)
         .style('left', x + 'px')
         .style('top', y + 'px')
+        .style('border-radius', 0)
+        .style('border', '0.4px solid white')
+        .style('width', tileSize + 'px')
+        .style('height', tileSize + 'px')
 
-    // move baby tile
-    
-    // console.log(d3.select(this).select('div').style('background-color', 'red'))
   }
 
   u.exit().remove();
@@ -130,12 +133,12 @@ const updateAxis = () => {
 }
 
 const update = () => {
-  updateCaptions();
   updateAxis();
+  updateCaptions();
   updateVideoHeight();
 };
 
-d3.csv('./data/bush-captions.csv').then(csv => {
+d3.csv('./data/test-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
