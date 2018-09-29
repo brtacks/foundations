@@ -22,6 +22,7 @@ for (let i = 0; i < NUM_FOUNDATIONS; i++)
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
   const { top, left, height } = document.getElementById('svg').getBoundingClientRect();
+  tilesPlaced[foundation]++;
   return {
     x: left + (i % tilesPerRow) * tileSize,
     y: top + height + -(Math.floor(i / tilesPerRow) + 1) * tileSize,
@@ -78,6 +79,8 @@ function updateWord(captionData, i) {
         .style('color', color);
 
     // create baby tile
+    const { x, y } = nextTilePosition(foundation);
+    console.log(x, y);
     const babyTile = d3.select(this)
       .append('div')
       .style('display', 'none')
@@ -85,17 +88,14 @@ function updateWord(captionData, i) {
       .transition()
         .delay(delay)
         .style('display', 'inline-block')
-        .style('background-color', color);
+        .style('background-color', color)
+      .transition()
+        .style('left', x + 'px')
+        .style('top', y + 'px')
 
     // move baby tile
-    const { x, y } = nextTilePosition(foundation);
-    console.log(d3.select(this).select('div'))
-    d3.select(this)
-      .select('div')
-      .transition()
-      .duration(1000)
-        .style('left', x)
-        .style('top', y);
+    
+    // console.log(d3.select(this).select('div').style('background-color', 'red'))
   }
 
   u.exit().remove();
