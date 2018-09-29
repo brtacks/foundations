@@ -15,9 +15,18 @@ const colors = [
   '#fdb462',
 ];
 
-const tilePlacements = [];
+const tilesPlaced = [];
 for (let i = 0; i < NUM_FOUNDATIONS; i++)
-  tilePlacements.push({});
+  tilesPlaced.push(0);
+
+const nextTilePosition = foundation => {
+  const i = tilesPlaced[foundation];
+  const { top, left, height } = document.getElementById('svg').getBoundingClientRect();
+  return {
+    x: left + (i % tilesPerRow) * tileSize,
+    y: top + height + -(Math.floor(i / tilesPerRow) + 1) * tileSize,
+  };
+};
 
 const initialize = () => 
   data = data
@@ -52,8 +61,8 @@ function updateWord(captionData, i) {
     .style('color', 'hsla(0, 0%, 100%, .4)')
     .html(word => word.text + ' ')
     .transition()
-    .delay(word => word.offset)
-    .style('color', 'rgba(255, 255, 255, .92)');
+      .delay(word => word.offset)
+      .style('color', 'rgba(255, 255, 255, .92)');
 
   const { foundation } = captionData;
 
@@ -65,31 +74,28 @@ function updateWord(captionData, i) {
     d3.select(this)
       .selectAll('span')
       .transition()
-      .delay(delay)
-      .style('color', color);
+        .delay(delay)
+        .style('color', color);
 
     // create baby tile
     const babyTile = d3.select(this)
-      .selectAll('div')
-      .data([0]) // better way?
-      .enter()
       .append('div')
       .style('display', 'none')
       .classed('baby-tile', true)
       .transition()
-      .delay(delay)
-      .style('display', 'inline-block')
-      .style('background-color', color);
+        .delay(delay)
+        .style('display', 'inline-block')
+        .style('background-color', color);
 
     // move baby tile
-    babyTile
+    const { x, y } = nextTilePosition(foundation);
+    console.log(d3.select(this).select('div'))
+    d3.select(this)
+      .select('div')
       .transition()
-      .duration(500)
-      .style('transform', () => {
-        generateNextTilePosition();
-        // const { }
-        return 'translate(0,0)';
-      });
+      .duration(1000)
+        .style('left', x)
+        .style('top', y);
   }
 
   u.exit().remove();
