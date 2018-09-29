@@ -81,7 +81,6 @@ function updateWord(captionData, i) {
 
     // create baby tile
     const { x, y } = nextTilePosition(foundation);
-    console.log(x, y);
     const babyTile = d3.select(this)
       .append('div')
       .style('display', 'none')
@@ -97,8 +96,7 @@ function updateWord(captionData, i) {
         .style('border-radius', 0)
         .style('border', '0.4px solid white')
         .style('width', tileSize + 'px')
-        .style('height', tileSize + 'px')
-
+        .style('height', tileSize + 'px');
   }
 
   u.exit().remove();
