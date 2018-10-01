@@ -7,12 +7,12 @@ let maxValue = 100;
 let barWidth = tilesPerRow * tileSize + barPadding;
 
 const colors = [
-  '#8dd3c7',
-  '#ffffb3',
-  '#bebada',
-  '#fb8072',
-  '#80b1d3',
-  '#fdb462',
+  '#66c2a5',
+  '#fc8d62',
+  '#8da0cb',
+  '#e78ac3',
+  '#a6d854',
+  '#ffd92f',
 ];
 
 const tilesPlaced = [];
