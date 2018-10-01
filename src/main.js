@@ -22,10 +22,9 @@ for (let i = 0; i < NUM_FOUNDATIONS; i++)
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
   const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
-  console.log(top, height)
   tilesPlaced[foundation]++;
   return {
-    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize,
+    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize - 40,
     y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1),
   };
 };
@@ -136,7 +135,7 @@ const update = () => {
   updateVideoHeight();
 };
 
-d3.csv('./data/bush-captions.csv').then(csv => {
+d3.csv('./data/test-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
