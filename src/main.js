@@ -23,9 +23,12 @@ const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
   const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
   tilesPlaced[foundation]++;
+
+  const customAestheticAdjustX = -50;
+  const customAestheticAdjustY = -5;
   return {
-    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize - 40,
-    y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1),
+    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize + customAestheticAdjustX,
+    y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1) + customAestheticAdjustY,
   };
 };
 
