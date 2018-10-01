@@ -138,7 +138,7 @@ const update = () => {
   updateVideoHeight();
 };
 
-d3.csv('./data/test-captions.csv').then(csv => {
+d3.csv('./data/bush-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
