@@ -15,9 +15,7 @@ const colors = [
   '#ffd92f',
 ];
 
-const tilesPlaced = [];
-for (let i = 0; i < NUM_FOUNDATIONS; i++)
-  tilesPlaced.push(0);
+const tilesPlaced = new Array(NUM_FOUNDATIONS).fill(0);
 
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
@@ -138,7 +136,7 @@ const update = () => {
   updateVideoHeight();
 };
 
-d3.csv('./data/bush-captions.csv').then(csv => {
+d3.csv('./data/test-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
