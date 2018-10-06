@@ -84,3 +84,10 @@ div.baby-tile {
   fill: #777;
   font-family: Atlas Grotesk;
 }
+
+div.label {
+  font-size: 11px;
+  fill: #777;
+  font-family: Atlas Grotesk;
+  position: absolute;
+}

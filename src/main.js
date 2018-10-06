@@ -1,4 +1,11 @@
-const NUM_FOUNDATIONS = 6;
+const FOUNDATIONS = [
+  'Care',
+  'Fairness',
+  'Loyalty',
+  'Authority',
+  'Sanctity',
+  'Liberty',
+];
 
 let tileSize = 15;
 let tilesPerRow = 5;
@@ -15,7 +22,24 @@ const colors = [
   '#ffd92f',
 ];
 
-const tilesPlaced = new Array(NUM_FOUNDATIONS).fill(0);
+const tilesPlaced = new Array(FOUNDATIONS.length).fill(0);
+
+const updateLabels = () => {
+  const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
+
+  const u = d3.select('#text')
+    .selectAll('div')
+    .data(FOUNDATIONS)
+
+  u.enter()
+    .append('div')
+    .classed('label', true)
+    .style('left', (f, i) => `${(i-1) * barWidth + left}px`)
+    .style('top', (f, i) => `${top + height}px`)
+    .text(f => f);
+
+  u.exit().remove();
+};
 
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
@@ -41,7 +65,7 @@ const initialize = () =>
       words: caption.split(' '),
     }));
 
-const timedWords = ({ start, stop, words }) => {
+const timeWords = ({ start, stop, words }) => {
   const inc = (stop - start) / words.length;
 
   return words.map((w, i) => ({
@@ -51,7 +75,7 @@ const timedWords = ({ start, stop, words }) => {
 };
 
 function updateWord(captionData, i) {
-  const script = timedWords(captionData);
+  const script = timeWords(captionData);
   // a script contains an offset (in seconds) to indicate when a word is spoken
 
   const u = d3.select(this)
@@ -115,25 +139,41 @@ const updateCaptions = () => {
 };
 
 const updateAxis = () => {
-  const chartWidth = NUM_FOUNDATIONS * barWidth;
+  const chartWidth = FOUNDATIONS.length * barWidth;
   const chartHeight = maxValue / tilesPerRow * tileSize;
 
   const yScale = d3.scaleLinear().domain([0, maxValue]).range([chartHeight, 0]);
   const yAxis = d3.axisRight().scale(yScale).tickSize(chartWidth);
-
   d3.select('.y.axis').call(yAxis);
+
+  const xScale = d3.scaleLinear().domain([0, FOUNDATIONS.length]).range([0, chartWidth])
+  const xAxis = d3.axis().scale(xScale);
+  d3.select('.x.axis').call(xAxis);
 
   // move to a resize listener?
   const { width, height } = document.getElementById('chart').getBoundingClientRect();
-  d3.select('#chart-container svg')
+  d3.select('#svg')
     .style('min-width', width + 23)
     .style('min-height', height + 33);
 }
 
 const update = () => {
   updateAxis();
+  updateLabels();
   updateCaptions();
-  updateVideoHeight();
+
+  /* very bad solution to unknown problem */
+  // updateVideoHeight();
+  const video = document.getElementById('video');
+  const text = document.getElementById('text');
+  let oldTextHeight = text.getBoundingClientRect().height;
+  const heightSetter = setInterval(() => {
+    const { height } = text.getBoundingClientRect();
+    video.style.height = height + 'px';
+    if (height != oldTextHeight) {
+      clearInterval(heightSetter);
+    }
+  }, 1);
 };
 
 d3.csv('./data/bush-captions.csv').then(csv => {
@@ -156,7 +196,8 @@ document.addEventListener('visibilitychange', () => {
 const updateVideoHeight = () => {
   const video = document.getElementById('video');
   const text = document.getElementById('text');
-  video.style.height = text.offsetHeight + 'px';
+  const { height } = text.getBoundingClientRect();
+  video.style.height = height + 'px';
 };
 
 window.addEventListener('resize', updateVideoHeight);
