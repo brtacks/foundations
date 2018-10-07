@@ -147,7 +147,10 @@ const updateAxis = () => {
   d3.select('.y.axis').call(yAxis);
 
   const xScale = d3.scaleLinear().domain([0, FOUNDATIONS.length]).range([0, chartWidth])
-  const xAxis = d3.axisTop().scale(xScale);
+  const xAxis = d3.axisTop()
+    .scale(xScale)
+    .tickValues(FOUNDATIONS)
+    .tickFormat(f => f)
   d3.select('.x.axis').call(xAxis);
 
   // move to a resize listener?
