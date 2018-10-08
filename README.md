@@ -3,9 +3,13 @@ Visual essay on moral foundations and political ideology for _The Brass Tacks_.
 # Timeline
 
 - [x] *Planning:* high-level outlining and graphics brainstorm for the article
-- [ ] *Reducer:* transform data to be read from D3 graphic
-- [ ] *Data Visualization:* use D3 to create awesome data visualizations
+- [x] *Reducer:* transform data to be read from D3 graphic
+- [x] *Data Visualization:* use D3 to create awesome data visualizations
 - [ ] *Website:* make the website
+
+## Immediate TODOs:
+
+- Use Watson API to get centi-second precision on speech
 
 # Transcript: "Do you believe homosexuality is a choice?"
 
