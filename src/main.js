@@ -147,11 +147,11 @@ const updateAxis = () => {
   d3.select('.y.axis').call(yAxis);
 
   const xScale = d3.scaleLinear().domain([0, FOUNDATIONS.length]).range([0, chartWidth])
-  const xAxis = d3.axisTop()
-    .scale(xScale)
-    .tickValues(FOUNDATIONS)
-    .tickFormat(f => f)
-  d3.select('.x.axis').call(xAxis);
+  // const xAxis = d3.axisTop()
+  //   .scale(xScale)
+  //   .tickValues(FOUNDATIONS)
+  //   .tickFormat(f => f)
+  // d3.select('.x.axis').call(xAxis);
 
   // move to a resize listener?
   const { width, height } = document.getElementById('chart').getBoundingClientRect();
@@ -162,7 +162,7 @@ const updateAxis = () => {
 
 const update = () => {
   updateAxis();
-  updateLabels();
+  // updateLabels();
   updateCaptions();
 
   /* very bad solution to unknown problem */
@@ -179,7 +179,7 @@ const update = () => {
   }, 1);
 };
 
-d3.csv('./data/bush-captions.csv').then(csv => {
+d3.csv('./data/test-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
@@ -211,3 +211,5 @@ const begin = () => {
 
   update();
 };
+
+
