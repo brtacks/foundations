@@ -34,7 +34,7 @@ const updateLabels = () => {
   u.enter()
     .append('div')
     .classed('label', true)
-    .style('left', (f, i) => `${(i-1) * barWidth + left}px`)
+    .style('left', (f, i) => `${(i-1) * barWidth + left + 36}px`)
     .style('top', (f, i) => `${top + height}px`)
     .text(f => f);
 
@@ -208,8 +208,8 @@ const updateBars = () => {
 
 const update = () => {
   updateAxis();
-  // updateLabels();
-  updateBars();
+  updateLabels();
+  // updateBars();
   updateCaptions();
 
   /* very bad solution to unknown problem */
