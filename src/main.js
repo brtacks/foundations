@@ -34,7 +34,7 @@ const updateLabels = () => {
   u.enter()
     .append('div')
     .classed('label', true)
-    .style('left', (f, i) => `${(i-1) * barWidth + left + 36}px`)
+    .style('left', (f, i) => `${(i-1) * barWidth + left + 34}px`)
     .style('top', (f, i) => `${top + height}px`)
     .text(f => f);
 
