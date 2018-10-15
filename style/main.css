@@ -34,7 +34,6 @@ html, body {
 
 #video-graphic {
   flex-basis: 57%;
-  max-width: 620px;
   position: relative;
 }
 

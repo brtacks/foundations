@@ -158,11 +158,58 @@ const updateAxis = () => {
   d3.select('#svg')
     .style('min-width', width + 23)
     .style('min-height', height + 33);
+};
+
+const getTiles = num => {
+  const tiles = [];
+
+  for (let i = 0; i < num; i++) {
+    tiles.push({
+      x: (i % tilesPerRow) * tileSize,
+      y: -(Math.floor(i / tilesPerRow) + 1) * tileSize,
+    });
+  }
+
+  return tiles;
+};
+
+function updateBar(d, i) {
+  const tiles = getTiles(d);
+  const u = d3.select(this)
+    .attr('transform', `translate(${i * barWidth}, 300)`)
+    .selectAll('rect')
+    .data(tiles);
+
+  u.enter()
+    .append('rect')
+    .style('opacity', 0)
+    .style('stroke', 'white')
+    .style('shape-rendering', 'crispEdges')
+    .merge(u)
+    .attr('x', d => d.x)
+    .attr('y', d => d.y)
+    .attr('width', tileSize)
+    .attr('height', tileSize);
+
+  u.exit().remove();    
 }
+
+const updateBars = () => {
+  const u = d3.select('g.bars')
+    .selectAll('g')
+    .data([10,10,10,10,10,10]);
+
+  u.enter()
+    .append('g')
+    .merge(u)
+    .style('fill', (d, i) => colors[i % colors.length])
+    .each(updateBar);
+};
 
 const update = () => {
   updateAxis();
   // updateLabels();
+  updateBars();
   updateCaptions();
 
   /* very bad solution to unknown problem */
@@ -179,7 +226,7 @@ const update = () => {
   }, 1);
 };
 
-d3.csv('./data/test-captions.csv').then(csv => {
+d3.csv('./data/bush-captions.csv').then(csv => {
   data = csv;
   initialize();
 });
