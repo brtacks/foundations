@@ -232,12 +232,13 @@ d3.csv('./data/bush-captions.csv').then(csv => {
 });
 
 let focused = true;
+let begun = false;
 const vid = document.getElementById('video');
 document.addEventListener('visibilitychange', () => {
   focused = !focused;
   if (!focused) {
     vid.pause();
-  } else if (!vid.ended) {
+  } else if (!vid.ended && begun) {
     vid.play();
   }
 });
@@ -255,6 +256,7 @@ window.addEventListener('resize', updateVideoHeight);
 const begin = () => {
   d3.select('button#begin-graphic').remove();
   vid.play();
+  begun = true;
 
   update();
 };
