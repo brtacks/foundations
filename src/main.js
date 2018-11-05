@@ -24,23 +24,6 @@ const colors = [
 
 const tilesPlaced = new Array(FOUNDATIONS.length).fill(0);
 
-const updateLabels = () => {
-  const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
-
-  const u = d3.select('#text')
-    .selectAll('div')
-    .data(FOUNDATIONS)
-
-  u.enter()
-    .append('div')
-    .classed('label', true)
-    .style('left', (f, i) => `${(i-1) * barWidth + left + 34}px`)
-    .style('top', (f, i) => `${top + height}px`)
-    .text(f => f);
-
-  u.exit().remove();
-};
-
 const nextTilePosition = foundation => {
   const i = tilesPlaced[foundation];
   const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
@@ -210,7 +193,6 @@ const updateBars = () => {
 
 const update = () => {
   updateAxis();
-  updateLabels();
   // updateBars();
   updateCaptions();
 
