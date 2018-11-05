@@ -23,6 +23,54 @@ html, body {
   background-color: #fff;
 }
 
+body {
+  padding-top: 5em;
+}
+
+header {
+  font-family: Roboto;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+#logo {
+  text-transform: uppercase;
+  font-family: Atlas Grotesk;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+#logo a {
+  color: black;
+  text-decoration: none;
+}
+
+#logo a:hover {
+  text-decoration: underline;
+}
+
+header h1 {
+  font-size: 5em;
+  margin-bottom: 0.5rem;
+}
+
+header .description {
+  font-size: 1.1rem;
+  font-style: italic;  
+  margin-bottom: 2rem;
+}
+
+header .byline {  
+  font-weight: 700;
+}
+
+header .byline a {
+  color: black;
+}
+
 #content {
   width: 90%;
   margin: 0 auto;
@@ -74,14 +122,22 @@ div.baby-tile {
   stroke: #eee;
 }
 
-.y.axis path {
+.axis path {
   display: none;
 }
 
-.y.axis text {
+.axis text {
   font-size: 11px;
   fill: #777;
-  font-family: Atlas Grotesk;
+  font-family: Atlas Grotesk;  
+}
+
+.x.axis line {
+  display: none;
+}
+
+.x.axis text {
+  text-anchor: start;
 }
 
 div.label {

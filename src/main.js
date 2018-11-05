@@ -147,17 +147,19 @@ const updateAxis = () => {
   d3.select('.y.axis').call(yAxis);
 
   const xScale = d3.scaleLinear().domain([0, FOUNDATIONS.length]).range([0, chartWidth])
-  // const xAxis = d3.axisTop()
-  //   .scale(xScale)
-  //   .tickValues(FOUNDATIONS)
-  //   .tickFormat(f => f)
-  // d3.select('.x.axis').call(xAxis);
+  const xAxis = d3.axisBottom()
+    .scale(xScale)
+    .ticks(FOUNDATIONS.length, 's')
+    .tickFormat(d => FOUNDATIONS[d]);
+  d3.select('.x.axis')
+    .attr('transform', `translate(0, ${chartHeight})`)
+    .call(xAxis);
 
   // move to a resize listener?
   const { width, height } = document.getElementById('chart').getBoundingClientRect();
   d3.select('#svg')
     .style('min-width', width + 23)
-    .style('min-height', height + 33);
+    .style('min-height', height + 35);
 };
 
 const getTiles = num => {
