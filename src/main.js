@@ -29,11 +29,11 @@ const nextTilePosition = foundation => {
   const { top, left, height } = document.getElementById('chart').getBoundingClientRect();
   tilesPlaced[foundation]++;
 
-  const customAestheticAdjustX = -50;
+  const customAestheticAdjust = { left: -60, top: -23 };
   const customAestheticAdjustY = -5;
   return {
-    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize + customAestheticAdjustX,
-    y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1) + customAestheticAdjustY,
+    x: foundation * barWidth + left + (i % tilesPerRow) * tileSize + customAestheticAdjust.left,
+    y: top + height - tileSize * (Math.floor(i / tilesPerRow) + 1) + customAestheticAdjust.top - document.getElementById('video-container').getBoundingClientRect().top,
   };
 };
 
@@ -142,7 +142,7 @@ const updateAxis = () => {
   const { width, height } = document.getElementById('chart').getBoundingClientRect();
   d3.select('#svg')
     .style('min-width', width + 23)
-    .style('min-height', height + 35);
+    .style('min-height', height + 42);
 };
 
 const getTiles = num => {
