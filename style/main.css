@@ -72,6 +72,26 @@ header .byline a {
   color: black;
 }
 
+.btn-container {
+  display: flex;
+  margin-top: 1.5em;
+  justify-content: center;
+}
+
+#begin-graphic {
+  font-family: Roboto;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  font-size: 15px;
+}
+
+#begin-graphic:hover {
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+}
+
 #content {
   width: 90%;
   margin: 0 auto;
