@@ -99,6 +99,7 @@ header .byline a {
 
 #graphic {
   display: flex;
+  width: 1296px;
 }
 
 #video-graphic {
